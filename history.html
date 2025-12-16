@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NHD Website</title>
+
+    <style>
+        html {
+            background-color: #3d3b3c;
+        }
+
+        body {
+            margin: 40px auto;
+            width: 80%;
+            font-family: "Georgia", serif;
+            background-color: #4b4a3a;
+            padding: 40px; /* ✅ body padding added */
+        }
+
+        div img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            z-index: 2;
+            width: 80%;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #8A886A;
+            width: 100%;
+            margin: 40px 0;
+        }
+
+        nav {
+            background-color: #7d7b6d;
+            padding: 10px 0;
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #FFF8e7;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 14px 16px;
+        }
+
+        nav ul li a:hover {
+            color: #4b4a3a;
+        }
+
+        /* ✅ Two-column layout */
+        .history-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #FFF8e7;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #FFF8e7;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <img src="images/railroad.jpg" alt="Map of The Underground Railroad">
+        <h1>"If you ever see the torches in the woods keep going. Don't ever stop." – Harriet Tubman</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="figthforfreedow1.html">Fight For Freedom 1</a></li>
+            <li><a href="figthforfreedow2.html">Fight For Freedom 2</a></li>
+            <li><a href="bib.html">Bibliography</a></li>
+        </ul>
+    </nav>
+
+    <div class="history">
+        <h1>History</h1>
+
+        <!-- ✅ Two columns start -->
+        <div class="history-columns">
+
+            <div>
+                <h2>Transatlantic Slave Trade</h2>
+                <p>
+                    From the mid-16th century to the 1860s, the Atlantic Slave Trade kidnapped
+                    and imported millions of Africans to America. The conditions of the ships
+                    and the lives they were subjected to in those ships were abysmal; despite
+                    there being over 12.5 million Africans loaded on those ships, only 11
+                    million were able to survive the voyage. This trade was initiated by the
+                    Portuguese and Spanish, but the Dutch and British joined soon after. To
+                    this day, 200 million people of African descent remain in the Americas.
+                </p>
+            </div>
+
+            <div>
+                <h2>The Complexities of Human Trafficking</h2>
+                <p>
+                    It is hard to fathom this system from the view of someone in the future.
+                    This was an entire human trafficking ring that tortured and sold people
+                    like animals. It is even harder to imagine that all of this was normal and
+                    even seen as respectable. Owning a slave was seen as a luxury, and much of
+                    the upper class owned or knew someone who owned a slave.
+                </p>
+            </div>
+
+        </div>
+        <!-- ✅ Two columns end -->
+    </div>
+
+</body>
+</html>
